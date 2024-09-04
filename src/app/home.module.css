@@ -10,7 +10,7 @@
   height: 90vh;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -19,16 +19,49 @@
   width: 90%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   border: solid 1px blue;
 }
 
 .section-criar-entrar{
-  border: solid 1px green;
+  height: 90%;
+  width: 55%;
+  background-color: darkslategray;
+  border-radius: .75em;
+}
+
+.criar-entrar-tab-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.criar-tab {
+  width: 50%;
+  height: 100%;
+  border-right: solid 2px white;
+  border-bottom: solid 2px white
+}
+.entrar-tab {
+  width: 50%;
+  height: 100%;
+  border-left: solid 2px white;
+  border-bottom: solid 2px white;
+}
+.active {
+  border: none;
 }
 
 .section-como-jogar{
-  border: solid 1px red;
+  height: 90%;
+  width: 40%;
+  border: solid 3px darkslategray;
+  border-radius: .75em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 /* .main {
   display: flex;

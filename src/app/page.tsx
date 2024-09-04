@@ -13,7 +13,14 @@ export default function Home() {
 
       <main className={styles.main}>
         <article className={styles.article}>
-          <section className={styles["section-criar-entrar"]}>Section Criar / Entrar</section>
+          <section className={styles["section-criar-entrar"]}>
+            <div className={styles["criar-entrar-tab-container"]}>
+              <div className={`${styles["criar-tab"]} ${styles["active"]}`}>Criar</div>
+              <div className={styles["entrar-tab"]}>Entrar</div>
+            </div>
+            Section Criar / Entrar
+          </section>
+
           <section className={styles["section-como-jogar"]}>Section Carousel Como Jogar</section>
         </article>
       </main>
