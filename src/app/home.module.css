@@ -1,3 +1,35 @@
+.header {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px blue;
+}
+
+.section-criar-entrar{
+  border: solid 1px green;
+}
+
+.section-como-jogar{
+  border: solid 1px red;
+}
 /* .main {
   display: flex;
   flex-direction: column;
