@@ -20,14 +20,16 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border: solid 1px blue;
+  border: solid 5px white;
+  border-radius: 1em;
 }
 
 .section-criar-entrar{
   height: 90%;
   width: 55%;
   background-color: darkslategray;
-  border-radius: .75em;
+  border-radius: var(--border-radius);
+  overflow: hiiden;
 }
 
 .criar-entrar-tab-container {
@@ -37,17 +39,21 @@
   align-items: center;
   justify-content: center;
 }
-.criar-tab {
+.criar-tab, .entrar-tab {
   width: 50%;
   height: 100%;
-  border-right: solid 2px white;
-  border-bottom: solid 2px white
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid 5px var(--black-gray);
+  border-top-left-radius: var(--border-radius);
+  cursor: pointer;
+}
+.criar-tab{
+  border-right: solid 5px var(--black-gray);
 }
 .entrar-tab {
-  width: 50%;
-  height: 100%;
-  border-left: solid 2px white;
-  border-bottom: solid 2px white;
+  border-left: solid 5px var(--black-gray);
 }
 .active {
   border: none;
@@ -57,7 +63,7 @@
   height: 90%;
   width: 40%;
   border: solid 3px darkslategray;
-  border-radius: .75em;
+  border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
   align-items: center;
