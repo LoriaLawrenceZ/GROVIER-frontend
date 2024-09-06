@@ -9,7 +9,7 @@ export default function Filmes () {
 
   useEffect(() => {
     const getData = async () => {
-      const { data } = await supabase.from('filmes').select()
+      const { data } = await supabase.from('filmes').select("*")
       setFilmes(data)
     }
     getData()
